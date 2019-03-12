@@ -1,0 +1,27 @@
+{
+    "name": "zvps/laravel-patches",
+    "description": "Patches for unsupported versions of the Laravel Framework.",
+    "authors": [
+        {
+            "name": "Kevin Andrews",
+            "email": "kevin@zvps.uk"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "require": {
+        "netresearch/composer-patches-plugin": "~1.0"
+    },
+    "extra": {
+        "patches": {
+            "laravel/framework": {
+                "4.2.22": [
+                    {
+                        "title": "[BUGFIX] Restart database connections on failed beginTransaction() calls to PDO.",
+                        "url": "zvps/laravel-patches/src/Illuminate/Database/Connection.patch"
+                    }
+                ]
+            }
+        }
+    }
+}
+    
