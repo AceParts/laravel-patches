@@ -18,7 +18,7 @@ Add this repository to your projects composer.json (example below):
         "symfony/dom-crawler": "2.7.*",
         "doctrine/dbal": "~2.3",
         "zvps/laravel-4-env-polyfill": "v1.0.1",
-        "zvps/laravel-patches": "4.2.22"
+        "zvps/laravel-patches": "4.2.23"
     },
     "require-dev": {
         "php": "5.6.*",
