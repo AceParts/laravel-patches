@@ -18,7 +18,7 @@ Add this repository to your projects composer.json (example below):
         "symfony/dom-crawler": "2.7.*",
         "doctrine/dbal": "~2.3",
         "zvps/laravel-4-env-polyfill": "v1.0.1",
-        "zvps/laravel-patches": "4.2.23"
+        "zvps/laravel-patches": "v4.2.23"
     },
     "require-dev": {
         "php": "5.6.*",
@@ -36,5 +36,17 @@ Add this repository to your projects composer.json (example below):
 }
 ```
 
- - Patches will be applied automatically unless `--no-plugins` is passed to composer.
+For the latest / all patches apply the following branch to match the version of laravel needed:
 
+ - v4.2.22.x-dev
+
+To stay at a certian collection of patches and prevent new patches from being automatically loaded please use a tagged version:
+
+ - v4.2.23
+
+Tagged versions will follow on from the last known stable laravel version number.
+
+Notes:
+
+ - Patches will be applied automatically unless `--no-plugins` is passed to composer.
+ - To avoid issues with further updates make sure to include `"discard-changes": true` and where possible run composer with the `--no-interaction` flag.
